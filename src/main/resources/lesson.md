@@ -1,28 +1,17 @@
-## Notes:
-README.MD
-LICENSE
-.gitignore
 
-## 学习 markdown
+`分解tasks`
 
-## 学习 maven 常用plugins
-* maven-compiler-plugin
-* maven-checkstyle-plugin
-* cobertura-maven-plugin
+```
+1. 输入0-9的三个不同特殊数 
+2. 遇到输入数字是特殊数的倍数，不说数字，说特殊字母，e.g 3->Fizz, 5->Buzz，7->Whizz
+3. 遇到输入数字是多位特殊数的倍数时，不说数字，说特殊字母组合，e.g 15->FizzBuzz, 105->FizzBuzzWhizz
+4. 遇到输入数字包含第一位特殊数时，不说数字，只说与之对应的特殊数，并且忽略其他条件。比如要报35的同学只报Fizz，不报BuzzWhizz。
+```
 
-## 学习测试相关的框架
-* hamcrest
+`优先级划分`
 
-## 安装iTerm，配置开发环境
+```
+4 > 2 > 3 > 1
 
-## 多写，多练习
-
-
-PMD
-
-FIND BUGS
-findbugs-maven-plugin
-mockito
-
-Stub vs mock
-
+游戏规则 优于 输入 输出
+```
