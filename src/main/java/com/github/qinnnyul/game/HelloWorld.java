@@ -2,7 +2,8 @@ package com.github.qinnnyul.game;
 
 public class HelloWorld
 {
-    public String say(){
+    public String say()
+    {
         return "helloworld";
     }
 }
