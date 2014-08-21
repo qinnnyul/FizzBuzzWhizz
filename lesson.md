@@ -12,10 +12,12 @@
 
 ```
 
-1.游戏规则
+任务一：游戏规则
     * 规则一：学生依次报数， 3返回Fizz, 5返回Buzz，7返回Whizz。
     * 规则二：学生依次报数， 15返回FizzBuzz，35返回BuzzWhizz，105返回FizzBuzzWhizz。
     * 规则三：学生依次报数， 包含3返回Fizz, 忽略前两个规则。
 
+3 4 5 7
+refactor
 ```
 
