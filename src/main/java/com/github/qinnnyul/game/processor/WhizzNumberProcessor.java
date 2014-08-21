@@ -1,4 +1,6 @@
-package com.github.qinnnyul.game;
+package com.github.qinnnyul.game.processor;
+
+import com.github.qinnnyul.game.constant.GameConstant;
 
 public class WhizzNumberProcessor extends NumberProcessor
 {

@@ -1,4 +1,6 @@
-package com.github.qinnnyul.game;
+package com.github.qinnnyul.game.model;
+
+import com.github.qinnnyul.game.processor.NumberProcessor;
 
 public class Student
 {

@@ -1,5 +1,10 @@
-package com.github.qinnnyul.game;
+package com.github.qinnnyul.game.model;
 
+import com.github.qinnnyul.game.model.Student;
+import com.github.qinnnyul.game.processor.BuzzNumberProcessor;
+import com.github.qinnnyul.game.processor.CommonNumberProcessor;
+import com.github.qinnnyul.game.processor.FizzNumberProcessor;
+import com.github.qinnnyul.game.processor.WhizzNumberProcessor;
 import org.junit.Before;
 import org.junit.Test;
 

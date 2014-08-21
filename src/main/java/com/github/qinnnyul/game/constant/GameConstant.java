@@ -1,6 +1,6 @@
-package com.github.qinnnyul.game;
+package com.github.qinnnyul.game.constant;
 
-public class GameConstant
+public final class GameConstant
 {
     public static final String FIZZ = "Fizz";
     public static final String BUZZ = "Buzz";

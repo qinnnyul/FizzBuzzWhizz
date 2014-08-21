@@ -1,4 +1,4 @@
-package com.github.qinnnyul.game;
+package com.github.qinnnyul.game.processor;
 
 public abstract class NumberProcessor
 {
