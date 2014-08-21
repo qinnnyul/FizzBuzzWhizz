@@ -6,22 +6,22 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-public class FizzBuzzWhizzTest
+public class StudentTest
 {
 
-    private FizzBuzzWhizz fizzBuzzWhizz;
+    private Student student;
 
     @Before
     public void setUp() throws Exception
     {
-        fizzBuzzWhizz = new FizzBuzzWhizz();
     }
 
     @Test
     public void should_return_fizz_when_student_count_is_multiple_of_3() throws Exception
     {
+        student = new Student(new FizzNumberProcessor());
         // when
-        String result = fizzBuzzWhizz.countOff(3);
+        String result = student.countOff(3);
 
         // then
         assertThat(result, is("Fizz"));
@@ -30,8 +30,9 @@ public class FizzBuzzWhizzTest
     @Test
     public void should_return_fizz_when_student_count_is_4() throws Exception
     {
+        student = new Student(new CommonNumberProcessor());
         // when
-        String result = fizzBuzzWhizz.countOff(4);
+        String result = student.countOff(4);
 
         // then
         assertThat(result, is(String.valueOf(4)));
@@ -40,8 +41,9 @@ public class FizzBuzzWhizzTest
     @Test
     public void should_return_buzz_when_student_count_is_multiple_of_5() throws Exception
     {
+        student = new Student(new BuzzNumberProcessor());
         // when
-        String result = fizzBuzzWhizz.countOff(5);
+        String result = student.countOff(5);
 
         // then
         assertThat(result, is("Buzz"));
@@ -51,8 +53,9 @@ public class FizzBuzzWhizzTest
     @Test
     public void should_return_whizz_when_student_count_is_multiple_of_7() throws Exception
     {
+        student = new Student(new WhizzNumberProcessor());
         // when
-        String result = fizzBuzzWhizz.countOff(7);
+        String result = student.countOff(7);
 
         // then
         assertThat(result, is("Whizz"));
@@ -64,7 +67,7 @@ public class FizzBuzzWhizzTest
 //    public void should_return_fizzbuzz_when_student_count_is_multiple_of_3_and_5() throws Exception
 //    {
 //        // when
-//        String result = fizzBuzzWhizz.countOff(15);
+//        String result = student.countOff(15);
 //
 //        // then
 //        assertThat(result, is("FizzBuzz"));
@@ -75,7 +78,7 @@ public class FizzBuzzWhizzTest
 //    public void should_return_fizzbuzz_when_student_count_is_multiple_of_5_and_7() throws Exception
 //    {
 //        // when
-//        String result = fizzBuzzWhizz.countOff(70);
+//        String result = student.countOff(70);
 //
 //        // then
 //        assertThat(result, is("BuzzWhizz"));
@@ -86,10 +89,10 @@ public class FizzBuzzWhizzTest
 //    public void should_return_fizzbuzzwhizz_when_student_count_is_multiple_of_3_and_5_and_7() throws Exception
 //    {
 //        // when
-//        String result = fizzBuzzWhizz.countOff(105);
+//        String result = student.countOff(105);
 //
 //        // then
-//        assertThat(result, is("FizzBuzzWhizz"));
+//        assertThat(result, is("Student"));
 //
 //    }
 //
@@ -97,7 +100,7 @@ public class FizzBuzzWhizzTest
 //    public void should_return_fizz_when_student_count_contains_3() throws Exception
 //    {
 //        // when
-//        String result = fizzBuzzWhizz.countOff(35);
+//        String result = student.countOff(35);
 //
 //        // then
 //        assertThat(result, is("Fizz"));
