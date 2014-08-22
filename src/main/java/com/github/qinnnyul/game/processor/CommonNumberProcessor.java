@@ -1,5 +1,7 @@
 package com.github.qinnnyul.game.processor;
 
+import com.github.qinnnyul.game.model.SpecialNumbers;
+
 public class CommonNumberProcessor extends NumberProcessor
 {
     public CommonNumberProcessor()
@@ -8,7 +10,7 @@ public class CommonNumberProcessor extends NumberProcessor
     }
 
     @Override
-    public String process(Integer number)
+    public String process(Integer number, SpecialNumbers specialNumbers)
     {
         return number.toString();
     }

@@ -1,6 +1,7 @@
 package com.github.qinnnyul.game.processor;
 
 import com.github.qinnnyul.game.constant.GameConstant;
+import com.github.qinnnyul.game.model.SpecialNumbers;
 
 public class WhizzNumberProcessor extends NumberProcessor
 {
@@ -10,8 +11,9 @@ public class WhizzNumberProcessor extends NumberProcessor
     }
 
     @Override
-    public String process(Integer number)
+    public String process(Integer number, SpecialNumbers specialNumbers)
     {
-        return ((number % 7) == 0) ? GameConstant.WHIZZ : getNextProcessor().process(number);
+        return specialNumbers.isWhizz(number) ? GameConstant.WHIZZ : getNextProcessor().process(number, specialNumbers);
     }
+
 }

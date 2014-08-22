@@ -1,5 +1,7 @@
 package com.github.qinnnyul.game.processor;
 
+import com.github.qinnnyul.game.model.SpecialNumbers;
+
 public abstract class NumberProcessor
 {
     private NumberProcessor numberProcessor;
@@ -9,7 +11,7 @@ public abstract class NumberProcessor
         this.numberProcessor = numberProcessor;
     }
 
-    public abstract String process(Integer number);
+    public abstract String process(Integer number, SpecialNumbers specialNumbers);
 
     public NumberProcessor getNextProcessor()
     {

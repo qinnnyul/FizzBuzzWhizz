@@ -1,6 +1,7 @@
 package com.github.qinnnyul.game.processor;
 
 import com.github.qinnnyul.game.constant.GameConstant;
+import com.github.qinnnyul.game.model.SpecialNumbers;
 
 public class FizzBuzzNumberProcessor extends NumberProcessor
 {
@@ -10,13 +11,9 @@ public class FizzBuzzNumberProcessor extends NumberProcessor
     }
 
     @Override
-    public String process(Integer number)
+    public String process(Integer number, SpecialNumbers specialNumbers)
     {
-        return isFizzBuzz(number) ? GameConstant.FIZZ + GameConstant.BUZZ : getNextProcessor().process(number);
+        return specialNumbers.isFizzBuzz(number) ? GameConstant.FIZZ + GameConstant.BUZZ : getNextProcessor().process(number, specialNumbers);
     }
 
-    private boolean isFizzBuzz(Integer number)
-    {
-        return number % 3 == 0 && number % 5 == 0;
-    }
 }

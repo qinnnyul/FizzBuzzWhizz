@@ -4,17 +4,18 @@ import com.github.qinnnyul.game.processor.NumberProcessor;
 
 public class Student
 {
-    private Integer number;
+    private SpecialNumbers specialNumbers;
     private NumberProcessor numberProcessor;
 
-    public Student(Integer number, NumberProcessor numberProcessor)
+    public Student(SpecialNumbers specialNumbers, NumberProcessor numberProcessor)
     {
-        this.number = number;
+        this.specialNumbers = specialNumbers;
         this.numberProcessor = numberProcessor;
     }
 
     public String countOff(Integer number)
     {
-        return numberProcessor.process(number);
+        return numberProcessor.process(number, specialNumbers);
     }
+
 }
