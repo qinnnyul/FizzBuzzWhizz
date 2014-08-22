@@ -1,4 +1,4 @@
-package com.github.qinnnyul.game.model;
+package com.github.qinnnyul.game.utils;
 
 import com.github.qinnnyul.game.processor.BuzzNumberProcessor;
 import com.github.qinnnyul.game.processor.BuzzWhizzNumberProcessor;

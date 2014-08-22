@@ -1,5 +1,6 @@
 package com.github.qinnnyul.game.model;
 
+import com.github.qinnnyul.game.utils.NumberProcessorFactory;
 import org.junit.Test;
 
 import java.lang.reflect.Constructor;

@@ -1,8 +1,5 @@
 package com.github.qinnnyul.game.processor;
 
-import com.github.qinnnyul.game.model.NumberProcessorFactory;
-import com.github.qinnnyul.game.model.Student;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

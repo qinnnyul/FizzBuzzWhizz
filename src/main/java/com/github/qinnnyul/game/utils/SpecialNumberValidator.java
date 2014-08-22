@@ -14,9 +14,14 @@ public class SpecialNumberValidator
 {
     public void validate(List<Integer> numbers)
     {
-        if (newHashSet(numbers).size() != SIZE_OF_NUMBERS || !isSingleDigitals(numbers)) {
+        if (isValidLength(numbers) || !isSingleDigitals(numbers)) {
             throw new InvalidSpecialNumbers();
         }
+    }
+
+    private boolean isValidLength(List<Integer> numbers)
+    {
+        return newHashSet(numbers).size() != SIZE_OF_NUMBERS;
     }
 
     private boolean isSingleDigitals(List<Integer> numbers)
