@@ -1,19 +1,15 @@
 package com.github.qinnnyul.game;
 
 import com.github.qinnnyul.game.model.Student;
-import com.github.qinnnyul.game.model.Teacher;
 
 import java.util.List;
 
 public class FizzBuzzWhizzMain
 {
-    private Teacher teacher;
-
     private List<Student> studentList;
 
-    public FizzBuzzWhizzMain(Teacher teacher, List<Student> studentList)
+    public FizzBuzzWhizzMain(List<Student> studentList)
     {
-        this.teacher = teacher;
         this.studentList = studentList;
     }
 

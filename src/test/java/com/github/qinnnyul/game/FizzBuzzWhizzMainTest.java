@@ -34,7 +34,7 @@ public class FizzBuzzWhizzMainTest
         students.add(new Student(specialNumbers, numberProcessor));
         students.add(new Student(specialNumbers, numberProcessor));
 
-        FizzBuzzWhizzMain game = new FizzBuzzWhizzMain(teacher, students);
+        FizzBuzzWhizzMain game = new FizzBuzzWhizzMain(students);
         // when
         game.start();
     }
