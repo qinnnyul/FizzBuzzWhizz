@@ -1,10 +1,8 @@
 package com.github.qinnnyul.game;
 
-import com.github.qinnnyul.game.model.SpecialNumbers;
 import com.github.qinnnyul.game.model.Student;
 import com.github.qinnnyul.game.model.Teacher;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class FizzBuzzWhizzMain
