@@ -85,7 +85,7 @@
                     </check>
                     <instrumentation>
                         <excludes>
-                            <exclude>com/github/qinnnyul/game/GameConstant.class</exclude>
+                            <exclude>com/github/qinnnyul/game/constant/GameConstant.class</exclude>
                         </excludes>
                     </instrumentation>
                 </configuration>

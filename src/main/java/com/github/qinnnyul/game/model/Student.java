@@ -4,10 +4,12 @@ import com.github.qinnnyul.game.processor.NumberProcessor;
 
 public class Student
 {
+    private Integer number;
     private NumberProcessor numberProcessor;
 
-    public Student(NumberProcessor numberProcessor)
+    public Student(Integer number, NumberProcessor numberProcessor)
     {
+        this.number = number;
         this.numberProcessor = numberProcessor;
     }
 

@@ -2,22 +2,26 @@
 `分解tasks`
 
 ```
-1. 输入0-9的三个不同特殊数 
-2. 遇到输入数字是特殊数的倍数，不说数字，说特殊字母，e.g 3->Fizz, 5->Buzz，7->Whizz
-3. 遇到输入数字是多位特殊数的倍数时，不说数字，说特殊字母组合，e.g 15->FizzBuzz, 105->FizzBuzzWhizz
-4. 遇到输入数字包含第一位特殊数时，不说数字，只说与之对应的特殊数，并且忽略其他条件。比如要报35的同学只报Fizz，不报BuzzWhizz。
-```
 
-`优先级划分`
+* 第一个task: 学生依次报数， 3返回Fizz, 4返回4, 5返回Buzz，7返回Whizz。
 
-```
+* 第二个task: 重构已有代码， Replace conditional with polymorphism
 
-任务一：游戏规则
-    * 规则一：学生依次报数， 3返回Fizz, 5返回Buzz，7返回Whizz。
-    * 规则二：学生依次报数， 15返回FizzBuzz，35返回BuzzWhizz，105返回FizzBuzzWhizz。
-    * 规则三：学生依次报数， 包含3返回Fizz, 忽略前两个规则。
+* 第三个task: 重构，以Chain Of Responsibility的方式
 
-3 4 5 7
-refactor
+* 第四个task: 学生依次报数， 15返回FizzBuzz，35返回BuzzWhizz，105返回FizzBuzzWhizz。
+
+* 第五个task：重构测试，将相关测试划分到具体类对应的测试类中。
+
+* 第六个task：学生依次报数， 包含3返回Fizz, 忽略前两个规则。
+
+* 第七个task：重构，用一个对象替换hardcoding的特殊字符。
+
+* 第八个task：老师说出0-9的三个不同特殊数， 并且验证数字的正确性。
+
+* 第九个task：主程序：学生从1到100依次报数。
+
+* 第十个task：依赖注入。
+
 ```
 
