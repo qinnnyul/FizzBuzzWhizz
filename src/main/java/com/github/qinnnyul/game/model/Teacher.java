@@ -6,12 +6,13 @@ import java.util.List;
 
 public class Teacher
 {
+    private SpecialNumberValidator specialNumberValidator;
+
     public Teacher(SpecialNumberValidator specialNumberValidator)
     {
         this.specialNumberValidator = specialNumberValidator;
     }
 
-    private SpecialNumberValidator specialNumberValidator;
 
     public SpecialNumbers give(List<Integer> numbers)
     {

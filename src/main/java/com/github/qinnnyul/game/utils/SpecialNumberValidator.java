@@ -7,14 +7,14 @@ import com.google.common.collect.Iterators;
 
 import java.util.List;
 
-import static com.github.qinnnyul.game.constant.GameConstant.*;
+import static com.github.qinnnyul.game.constant.GameConstant.SIZE_OF_NUMBERS;
 import static com.google.common.collect.Sets.newHashSet;
 
 public class SpecialNumberValidator
 {
     public void validate(List<Integer> numbers)
     {
-        if (newHashSet(numbers).size() != SIZE_OF_NUMBERS || !isSingleDigitals(numbers)){
+        if (newHashSet(numbers).size() != SIZE_OF_NUMBERS || !isSingleDigitals(numbers)) {
             throw new InvalidSpecialNumbers();
         }
     }
