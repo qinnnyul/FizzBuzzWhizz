@@ -6,6 +6,7 @@ import com.github.qinnnyul.game.processor.CommonNumberProcessor;
 import com.github.qinnnyul.game.processor.FizzBuzzNumberProcessor;
 import com.github.qinnnyul.game.processor.FizzBuzzWhizzNumberProcessor;
 import com.github.qinnnyul.game.processor.FizzNumberProcessor;
+import com.github.qinnnyul.game.processor.FizzSpecialNumberProcessor;
 import com.github.qinnnyul.game.processor.NumberProcessor;
 import com.github.qinnnyul.game.processor.WhizzNumberProcessor;
 
@@ -23,6 +24,6 @@ public final class NumberProcessorFactory
         FizzBuzzNumberProcessor fizzBuzzNumberProcessor = new FizzBuzzNumberProcessor(whizzNumberProcessor);
         BuzzWhizzNumberProcessor buzzWhizzNumberProcessor = new BuzzWhizzNumberProcessor(fizzBuzzNumberProcessor);
         FizzBuzzWhizzNumberProcessor fizzBuzzWhizzNumberProcessor = new FizzBuzzWhizzNumberProcessor(buzzWhizzNumberProcessor);
-        return fizzBuzzWhizzNumberProcessor;
+        return new FizzSpecialNumberProcessor(fizzBuzzWhizzNumberProcessor);
     }
 }

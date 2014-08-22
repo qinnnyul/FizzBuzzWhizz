@@ -13,6 +13,6 @@ public class NumberProcessorTest
     public void setUp() throws Exception
     {
         numberProcessor = NumberProcessorFactory.build();
-        student = new Student(7, numberProcessor);
+        student = new Student(3, numberProcessor);
     }
 }
