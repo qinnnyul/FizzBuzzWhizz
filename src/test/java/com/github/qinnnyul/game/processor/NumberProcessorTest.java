@@ -13,7 +13,7 @@ public class NumberProcessorTest
     @Before
     public void setUp() throws Exception
     {
-        SpecialNumbers specialNumbers = new SpecialNumbers();
+        SpecialNumbers specialNumbers = new SpecialNumbers(3, 5, 7);
         numberProcessor = NumberProcessorFactory.build();
         student = new Student(specialNumbers, numberProcessor);
     }
