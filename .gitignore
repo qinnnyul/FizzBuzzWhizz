@@ -9,7 +9,10 @@
 *.ear
 
 # Intellij
+<<<<<<< Updated upstream
 .idea/
+=======
+>>>>>>> Stashed changes
 *.ipr
 *.iml
 *.iws
